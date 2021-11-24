@@ -1,0 +1,70 @@
+@import '../scss/mixins';
+@import '../scss/animations';
+
+.wrapperNewReactFlashlight {
+  position: relative;
+  background: url("../imgs/new-black-friday/bg.png");
+  width: 100%;
+
+  #spotLightNew {
+    z-index: 3;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    cursor: none;
+    filter: blur(5px);
+    //backdrop-filter: blur(5px);
+    background-image: radial-gradient(circle, transparent 0, rgba(0, 0, 0, 0.95) 500px);
+    //background: "radial-gradient(transparent 0%, rgba(0, 0, 0, " + darkness + ") " + size + "px, rgba(0, 0, 0, " + (darkness + 0.1) + ") 80%)",
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #spotLightModalNew {
+    z-index: 2;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    //filter: blur(5px);
+    background: rgba(16, 45, 209, 0.3);
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #animationMobileNew {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      animation: lightNone 5s ease-in-out;
+    }
+  }
+
+  .handlerLight {
+    @include flexCol;
+    position: absolute;
+    z-index: 10;
+    right: 30px;
+    top: 30px;
+    width: min-content;
+    text-align: center;
+
+    img {
+      cursor: pointer;
+    }
+
+    label {
+      @include label-champion-24;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

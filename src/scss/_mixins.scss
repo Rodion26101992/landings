@@ -1,0 +1,82 @@
+@mixin p-desktop {
+  font-size: 72px;
+  line-height: 78px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  }
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@mixin h3-desktop {
+  font-size: 144px;
+  line-height: 172px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  }
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@mixin p-present {
+  p {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0;
+    text-align: start;
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @media (max-width: 360px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@mixin p-champion-36 {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@mixin label-champion-24 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin p-serpantin-62 {
+  font-size: 62px;
+  line-height: 74px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+

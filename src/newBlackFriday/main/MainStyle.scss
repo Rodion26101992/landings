@@ -1,0 +1,92 @@
+@import "../../scss/mixins";
+@import "../../scss/colors";
+
+.main_black_friday {
+  padding-top: 140px;
+  @include flexCol;
+  color: white;
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  // label {
+  //   @include p-champion-36;
+  // }
+
+  // .boxLabel {
+  //   position: relative;
+
+  //   h3 {
+  //     @include h3-desktop;
+  //     position: absolute;
+  //     z-index: 1;
+  //     left: 20%;
+  //     top: 15%;
+  //   }
+
+  //   .serpantinLeft {
+  //     position: absolute;
+  //     left: 3%;
+  //     top: 5%;
+  //   }
+
+  //   .serpantinRight {
+  //     position: absolute;
+  //     right: 3%;
+  //     bottom: 5%;
+  //   }
+
+  //   .basic {
+  //   }
+  // }
+
+  .box_title {
+    position: relative;
+
+    img {
+      position: absolute;
+      left: -40%;
+      top: 60%;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .box_text {
+      margin-top: 120px;
+      text-align: center;
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-left: 20px;
+        text-align: start;
+        margin-top: 40px;
+      }
+
+      .blue_color {
+        color: $colorPri;
+        @media (max-width: 768px) {
+          display: block;
+        }
+
+      }
+
+      p, label {
+        @include p-desktop;
+        @media (max-width: 768px) {
+          font-size: 35px;
+          line-height: 42px;
+        }
+
+      }
+
+    }
+  }
+
+  #main {
+    margin-right: 5%;
+    width: 90%;
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+  }
+}

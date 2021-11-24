@@ -1,0 +1,93 @@
+@import "../../scss/mixins";
+@import "../../scss/animations";
+
+.black_friday_presents {
+  text-align: center;
+  background: black;
+  color: white;
+  padding-bottom: 100px;
+  @media (max-width: 1024px) {
+    padding-bottom: 150px;
+  }
+
+  .wrapper_title_box {
+    position: relative;
+  }
+
+  #arrowPresent {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+  }
+
+  @import "../../scss/colors";
+  @import "../../scss/mixins";
+
+
+  .wrapper_present {
+    @include p-present;
+    @include flexCol;
+    padding: 0 20%;
+    @media (max-width: 1440px) {
+      padding: 0 10%;
+    }
+    @media (max-width: 1200px) {
+      padding: 0 5%;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+
+    .justify-start {
+      //justify-content: flex-start !important;
+    }
+
+    .align_bottom {
+      align-items: flex-end !important;
+      @media (max-width: 768px) {
+        align-items: flex-start !important;
+
+      }
+    }
+
+    .box_present {
+      @include flexCol;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      width: 100%;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .present {
+        @include flexCol;
+        align-items: start;
+        width: 470px;
+        //width: 50%;
+        @media (max-width: 768px) {
+          width: max-content;
+        }
+
+        .test {
+          align-items: center;
+          width: 470px;
+          height: 350px;
+        }
+
+        img {
+          //margin: 120px 0 40px;
+          @media (max-width: 768px) {
+            width: 70%;
+            margin: 50px 0 30px;
+          }
+        }
+
+        .textInfo {
+          width: max-content
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,11 @@
+.main_component {
+  background: #104DFD;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 50px 0 80px;
+  align-items: flex-start;
+  z-index: 1;
+  @media (max-width: 768px) {
+    padding: 30px 40px;
+  }
+}

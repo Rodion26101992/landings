@@ -1,0 +1,66 @@
+@import "../../scss/mixins";
+@import "../../scss/colors";
+@import "../../scss/layout";
+
+
+.black_friday_step_2 {
+  background: black;
+  text-align: center;
+  @media (max-width: 768px) {
+    padding: 0 35px;
+    text-align: start;
+  }
+  @media (max-width: 360px) {
+    padding: 0 15px;
+  }
+  .wrapperLink {
+    @include flexCol;
+    margin-top: 60px;
+    @media (max-width: 768px) {
+      img {
+        height: 150px;
+      }
+    }
+    @media (max-width: 480px) {
+      img {
+        height: 100px;
+      }
+    }
+
+  }
+
+  p {
+    @include p-desktop;
+    color: $colorWhite;
+  }
+a{
+  margin: 60px 0 100px;
+
+  button {
+    @include btnWhite;
+  }
+}
+
+  .box_step_2 {
+    @include flexCol;
+
+    img {
+      width: 50%;
+      margin-bottom: 250px;
+      @media (max-width: 768px) {
+        margin-bottom: 120px;
+        width: 100%;
+      }
+    }
+
+    .wrapper_text {
+      @media (max-width: 768px) {
+        width: 100%;
+        text-align: start;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+
+}

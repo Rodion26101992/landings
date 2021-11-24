@@ -1,0 +1,228 @@
+.step_three_component_halloween {
+  //color: #104EFF;
+  background: url("../../imgs/halloween/background/three-step.png") no-repeat;
+  //background: url("../../imgs/halloween/background/three-step.svg") 100% 100% no-repeat;
+  background-size: 100%;
+  color: #FFAA00;
+  padding: 30% 10% 260px 10%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1600px) {
+    padding: 30% 5% 260px 5%;
+  }
+  @media (max-width: 1440px) {
+    padding: 250px 50px 260px 50px;
+    img {
+      width: 50%;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 250px 20px 260px 20px;
+    img {
+      width: 40%;
+    }
+  }
+  @media (max-width: 768px) {
+    background: #FFAA00 url("../../imgs/halloween/background/three-step_mobile.png") no-repeat;
+    padding: 250px 10% 700px 10%;
+    img {
+      width: 100%;
+      margin-top: 70px;
+    }
+  }
+
+  .sub_title {
+    color: black;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  .boxTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    @media (max-width: 768px) {
+      align-items: center;
+      margin: 0;
+    }
+  }
+
+  h3 {
+    font-size: 120px;
+    line-height: 144px;
+    font-weight: 700;
+    margin: 0;
+    -webkit-text-stroke: .02em #000000;
+    @media (max-width: 1024px) {
+      font-size: 42px;
+      line-height: 50px;
+    }
+    @media (max-width: 768px) {
+      font-size: 61px;
+      line-height: 73px;
+    }
+    @media (max-width: 480px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  .no_wrap {
+    white-space: nowrap
+  }
+
+  label {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    margin: 0;
+    color: black;
+    text-transform: uppercase;
+    @media (max-width: 1600px) {
+      font-size: 42px;
+      line-height: 50px;
+    }
+    @media (max-width: 1440px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 20px;
+      max-width: 200px;
+    }
+
+  }
+
+  .boxBody {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .wrapper_prize {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .box_prize {
+      display: flex;
+      flex-direction: column;
+      max-width: 340px;
+      text-align: center;
+
+      img {
+        width: max-content;
+      }
+
+      @media (max-width: 1600px) {
+        align-items: center;
+        img {
+          width: 180px
+        }
+      }
+      @media (max-width: 1024px) {
+        img {
+          width: 140px
+        }
+      }
+
+    }
+
+
+    .rotateDeg {
+      transform: rotate(-20deg);
+    }
+
+    .rotateDeg20 {
+      transform: rotate(20deg);
+    }
+
+    .rotateDegRight {
+      transform: rotate(10deg);
+    }
+
+    .rotateDegRight15 {
+      transform: rotate(-15deg);
+    }
+
+    .basicImg {
+      @media (max-width: 1600px) {
+        width: 45%;
+      }
+      @media (max-width: 1440px) {
+        width: 50%;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .box_relative {
+      margin-top: 200px;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: -200px;
+        right: 60px;
+        @media (max-width: 1600px) {
+          top: -120px;
+          right: 120px;
+        }
+        @media (max-width: 1024px) {
+          top: -90px;
+          right: 50px;
+        }
+
+      }
+    }
+  }
+
+  .boxBodyMobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      img {
+        margin-top: 20px;
+      }
+      label {
+        font-size: 61px;
+        line-height: 73px;
+        @media (max-width: 550px) {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+    }
+
+  }
+
+  .wrapper_end-title {
+    display: flex;
+    justify-content: center;
+
+    .end-title {
+      width: 50%;
+      text-align: center;
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 100px;
+        max-width: 300px;
+        text-align: center;
+      }
+    }
+  }
+}

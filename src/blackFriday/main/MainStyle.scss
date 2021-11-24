@@ -1,0 +1,59 @@
+@import "../../scss/animations";
+
+.main_component_black_friday {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  @media (max-width: 768px) {
+    padding: 0 35px;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 144px;
+    margin: 10% 0 20px;
+    @media (max-width: 1440px) {
+      font-size: 78px;
+    }
+    @media (max-width: 768px) {
+      font-size: 64px;
+      line-height: 64px;
+      margin-top: 50px;
+    }
+
+  }
+
+  label {
+    font-size: 36px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      margin: 50px 0;
+    }
+  }
+
+
+  .box_title {
+    text-align: center;
+    font-size: 72px;
+    line-height: 78px;
+    margin: 7% 0 10%;
+
+    p {
+      margin: 0;
+      @media (max-width: 1440px) {
+        font-size: 48px;
+      }
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: start;
+      }
+
+    }
+  }
+}

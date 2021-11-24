@@ -1,0 +1,30 @@
+.slider_wrapper {
+  text-align: center;
+
+  .wrapper_title_box {
+    position: relative;
+  }
+
+  #arrowBox {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #titleBox {
+    width: 40%;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #titleBoxMobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
+  }
+}

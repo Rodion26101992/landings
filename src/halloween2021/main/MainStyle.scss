@@ -1,0 +1,95 @@
+.main_component_halloween {
+  background: url("../../imgs/halloween/background/main.svg") 100% 100% no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 3rem 5rem 5rem;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 1600px) {
+    justify-content: center;
+    img {
+      width: 60%;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 5rem 3rem 5rem;
+    img {
+      width: 50%;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    padding: 5rem 0 5rem;
+  }
+
+  .box_title {
+    //text-align: center;
+    width: 100%;
+    margin-top: 8rem;
+
+    p {
+      color: white;
+      font-size: 48px;
+      line-height: 64px;
+      font-weight: 400;
+      margin: 0 0 0 50px;
+    }
+
+    @media (max-width: 1600px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
+      p {
+        font-size: 36px;
+        line-height: 48px;
+      }
+      img {
+        width: 90%;
+      }
+    }
+    @media (max-width: 1440px) {
+      p {
+        font-size: 32px;
+        line-height: 48px;
+        margin: 0 0 0 30px;
+      }
+    }
+    @media (max-width: 1024px) {
+      p {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    @media (max-width: 768px) {
+      p {
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+    @media (max-width: 480px) {
+      p {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    @media (max-width: 375px) {
+      text-align: left;
+      padding: 0 1rem;
+      width: auto;
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+  }
+}

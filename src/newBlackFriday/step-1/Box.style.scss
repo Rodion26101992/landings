@@ -1,0 +1,39 @@
+@import "../../scss/mixins";
+@import "../../scss/animations";
+
+.black_friday_box {
+  background: url("../../imgs/new-black-friday/step_box/background.png");
+  background-size: cover;
+  padding-bottom: 150px;
+  @media (max-width: 480px) {
+    background: url("../../imgs/new-black-friday/step_box/background.png") 150%;
+    background-size: cover;
+  }
+
+  #boxImg {
+    margin: 0px 200px 0 0;
+    cursor: pointer;
+    @media (max-width: 1440px) {
+      width: 50%;
+    }
+    @media (max-width: 768px) {
+      margin: 50px 0 0 0;
+    }
+    @media (max-width: 480px) {
+      width: 70%;
+    }
+  }
+
+  #boxImg:hover {
+    animation: bigBox 3s infinite;
+  }
+
+  .box_step_2 {
+    @include flexCol;
+
+    .wrapper_text {
+
+    }
+  }
+
+}

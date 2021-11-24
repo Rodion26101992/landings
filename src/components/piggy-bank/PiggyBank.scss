@@ -1,0 +1,173 @@
+.wrapper_piggy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../imgs/svg/pig_back.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: 1000px;
+  justify-content: center;
+  padding-bottom: 300px;
+  z-index: 1;
+  @media (max-width: 1600px) {
+    padding-bottom: 150px;
+  }
+  @media (max-width: 1400px) {
+    background-size: 200%;
+    padding-bottom: 220px;
+  }
+  @media (max-width: 812px) {
+    background-image: url(../../imgs/svg/piggy_bank_mobile.svg);
+    top: -60px;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 500px
+  }
+
+  .first_angel {
+    top: 30%;
+  }
+
+  .second_angel {
+
+  }
+
+  .third_angel {
+
+  }
+
+  .title {
+    display: flex;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      margin: 80px 0 0 0;
+
+    }
+
+    h3 {
+      color: white;
+      font-family: Geogrotesque Cyr;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 86px;
+      margin: 0 10px 0 80px;
+      @media (max-width: 768px) {
+        margin: 0 50px 0 20px;
+        font-size: 40px;
+        line-height: 48px;
+
+        img {
+          height: 40px;
+        }
+      }
+    }
+
+  }
+
+  .wrapperContent {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    //.mr-none {
+    //  @media (max-width: 768px) {
+    //    margin: 0;
+    //  }
+    //}
+    .wrapperText {
+      max-width: 740px;
+      @media (max-width: 768px) {
+        background: #2CD5C4;
+        padding: 0 40px;
+        z-index: 1;
+
+      }
+
+      span {
+        color: darkslategray;
+      }
+
+    }
+
+
+    .wrapperCoin {
+      position: relative;
+
+      img {
+        position: absolute;
+      }
+
+      .coinRight {
+        top: -125px;
+        right: -175px;
+      }
+
+      .coinLeft {
+        top: -100px;
+      }
+
+      .coinRightBottom {
+        top: -5px;
+        left: 45px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .centerContent {
+    justify-content: center;
+  }
+
+  .wrapperImages {
+    position: relative;
+    margin: 35px 55px 0 75px;
+    //.imgBackground {
+    //  position: relative;
+    //}
+    .imgTop {
+      position: absolute;
+      top: -15px;
+      left: -25px;
+    }
+
+    .centerImg {
+      left: 20px;
+      bottom: 10px;
+    }
+
+  }
+
+  .isDesktop {
+    top: 10%;
+    right: 10%;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .isMobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .mr_left_120 {
+    margin: 35px 55px 0 125px;
+  }
+
+  .pd-bottom {
+    padding-bottom: 80px !important;
+  }
+
+}
+
+

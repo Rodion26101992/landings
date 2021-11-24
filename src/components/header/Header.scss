@@ -1,0 +1,139 @@
+.wrapper_header_component {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fcf2f3;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .wrapper_links_mobile {
+
+  }
+
+  .isDesktop {
+    width: 100%;
+    margin-right: 20px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .wrapper_mobile_img {
+    padding: 20px 0 20px 20px;
+  }
+
+  .mobile_nav {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    button {
+      z-index: 3;
+      font-size: 14px;
+      font-family: Mariupol;
+      line-height: 17px;
+      border: 1px solid black;
+      border-radius: 25px;
+      padding: 14px 16px 14px 19px;
+      margin-right: 20px;
+    }
+
+    .wrapper_links_mobile {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      width: 99%;
+      top: 80%;
+      right: 0;
+      //left: -10px;
+      z-index: 2;
+      min-width: 200px;
+      padding: 20px 0;
+      border: 1px solid #104DFD;
+      border-radius: 25px;
+
+      a, span, .documents {
+        text-decoration: none;
+        font-family: Mariupol-Regular;
+        font-size: 18px;
+        color: #104eff;
+        padding: 20px 0 0 20px;
+      }
+
+      .documents {
+        .modal_window {
+          margin-top: 20px;
+
+          a {
+            color: darkslateblue;
+            padding: 0 20px 0 20px;
+          }
+
+          @media (max-width: 530px) {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            a {
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .wrapper_links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    .documents {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .modal_window {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      background: white;
+      z-index: 2;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+
+      a {
+        margin-top: 10px;
+      }
+    }
+
+
+    a, span, .documents {
+      text-decoration: none;
+      font-family: Mariupol-Regular;
+      font-size: 1.01582vw;
+      color: #104eff;
+
+    }
+
+    :hover {
+      color: darkslateblue;
+    }
+
+
+    span {
+      font-family: Mariupol-Medium;
+      font-size: 1.25024vw;
+      line-height: 125.79%;
+
+    }
+  }
+}
