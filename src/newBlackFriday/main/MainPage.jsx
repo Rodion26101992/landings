@@ -9,6 +9,7 @@ import "./MainStyle.scss";
 export default function MainPageComponent() {
     return <div className="main_black_friday">
         <img id="main" src={imgsMain.Main} alt="main"/>
+        <img id="main_mobile" src={imgsMain.MainMobile} alt="main"/>
         <div className="box_title">
             <img src={Arrow} alt="arrow"/>
             <div className="box_text">

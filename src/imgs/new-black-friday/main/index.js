@@ -5,6 +5,7 @@ import BlueBack from "./blue_back.svg";
 import GreenBack from "./green_back.svg";
 import RedBack from "./red_back.svg";
 import Main from "./main.png";
+import MainMobile from "./main_mobile.png";
 
 export default {
     BlueTitle,
@@ -13,5 +14,6 @@ export default {
     BlueBack,
     GreenBack,
     RedBack,
-    Main
+    Main,
+    MainMobile
 }

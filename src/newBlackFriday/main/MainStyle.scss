@@ -59,7 +59,7 @@
         width: 100%;
         margin-left: 20px;
         text-align: start;
-        margin-top: 40px;
+        margin-top: 0px;
       }
 
       .blue_color {
@@ -86,6 +86,14 @@
     margin-right: 5%;
     width: 90%;
     @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #main_mobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: inline-block;
       width: 95%;
     }
   }

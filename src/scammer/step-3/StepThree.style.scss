@@ -1,0 +1,56 @@
+@import "../../scss/mixins";
+
+.step_three_scammer {
+  display: flex;
+  color: white;
+  margin-top: 300px;
+  position: relative;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+  }
+
+  #female {
+    position: absolute;
+    top: -50%;
+    left: 45%;
+    width: 50%;
+
+    @media (max-width: 768px) {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .wrapper_text {
+    width: 50%;
+    margin-left: 5%;
+    //@media (max-width: 1200px) {
+    //  width: 60%;
+    //}
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    h3 {
+      @include p-desktop;
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 48px;
+        line-height: 57px;
+      }
+    }
+
+    p {
+      @include p-scrammer;
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+  }
+}

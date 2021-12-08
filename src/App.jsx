@@ -15,6 +15,7 @@ import "./App.scss";
 import MainHalloween from "./halloween2021";
 import MainBlackFriday from "./blackFriday";
 import NewBlackFriday from "./newBlackFriday";
+import Scammers from "./scammer";
 
 
 export default function App() {
@@ -31,13 +32,13 @@ export default function App() {
                         <Redirect to="/blackfriday"/>
                     </Route>
                     <Route path="/blackfriday">
-                        <MainBlackFriday/>
-                    </Route>
-                    <Route path="/black_friday">
                         <NewBlackFriday/>
                     </Route>
+                    <Route path="/scammers">
+                        <Scammers/>
+                    </Route>
                     <Route path="*">
-                        <MainBlackFriday/>
+                        <NewBlackFriday/>
                     </Route>
                 </Switch>
             </Router>

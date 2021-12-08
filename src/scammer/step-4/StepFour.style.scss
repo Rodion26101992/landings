@@ -1,0 +1,56 @@
+@import "../../scss/mixins";
+
+.step_four_scammer {
+  display: flex;
+  background: #2CD5C4;
+  color: white;
+  border-radius: 43px;
+  margin-top: 400px;
+  padding: 120px;
+  position: relative;
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+    margin-top: 100px;
+  }
+
+  #sign {
+    position: absolute;
+    top: -20%;
+    right: 0;
+    @media (max-width: 768px) {
+      width: 20%;
+    }
+    @media (max-width: 480px) {
+      top: -10%;
+    }
+  }
+
+  .wrapper_text {
+    width: 80%;
+    margin-right: 5%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    h3 {
+      @include p-desktop;
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 34px;
+        line-height: 42px;
+      }
+    }
+
+    label {
+      @include label-scrammer-30;
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 19px;
+        line-height: 28px;
+      }
+    }
+  }
+
+
+}

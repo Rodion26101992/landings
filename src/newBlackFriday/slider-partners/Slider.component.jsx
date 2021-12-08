@@ -1,18 +1,8 @@
 import React from "react";
 import SliderSlick from "react-slick";
 import "./Slider.scss"
-import ImgLaptop from "../../imgs/svg/laptop.svg";
-import ImgHeadPhone from "../../imgs/svg/headphones.svg";
-import ImgSilpo from "../../imgs/svg/silpo.svg";
-import ImgComfy from "../../imgs/svg/comfy_card.svg";
 import ImgArrow from "../../imgs/new-black-friday/slider/arrow.png";
-import ImgBag from "../../imgs/svg/bag.svg";
-import ImgBoard from "../../imgs/svg/board_football.svg";
-import ImgSetChildren from "../../imgs/svg/set_children.svg";
-import ImgEldorado from "../../imgs/svg/eldorado_card.svg";
-import classnames from "classnames";
-import Podushka from "../../imgs/svg/podushka.svg";
-import IntertopImg from "../../imgs/halloween/partners/intertop.png";
+
 
 
 export function PrevArrowComponent(props) {

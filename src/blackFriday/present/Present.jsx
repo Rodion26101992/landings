@@ -44,13 +44,15 @@ export default function PresentComponent() {
         [{
             presentCard: presentsCard.Moyo,
             text: [
-                "3 сертифікати на 200 бонусів",
+                "3 сертифікати",
+                "на 200 бонусів",
             ],
         },
             {
                 presentCard: presentsCard.Comfy,
                 text: [
-                    "10 сертифікатів на 500 бонусів",
+                    "10 сертифікатів",
+                    "на 500 бонусів",
                 ],
             },
 
@@ -58,7 +60,8 @@ export default function PresentComponent() {
         [{
             presentCard: presentsCard.Zoo,
             text: [
-                "10 сертифікатів на 200 грн",
+                "10 сертифікатів",
+                "на 200 грн",
             ],
         },
 
@@ -66,7 +69,8 @@ export default function PresentComponent() {
             {
                 presentCard: presentsCard.Mau,
                 text: [
-                    "5 сертифікатів на 2500 грн",
+                    "5 сертифікатів",
+                    "на 2500 грн",
                 ],
             },
 
@@ -75,14 +79,16 @@ export default function PresentComponent() {
             {
                 presentCard: presentsCard.Pandora,
                 text: [
-                    "Намистина \"Новорічна ялинка\"",
+                    "Намистина",
+                    "\"Новорічна ялинка\"",
                 ],
             },
             {
                 presentCard: presentsCard.Garner,
                 text: [
                     "3 сертифікати на 500 грн.",
-                    "100 промокодів на знижку -20%"
+                    "100 промокодів",
+                    "на знижку -20%"
                 ],
             },
 
@@ -100,7 +106,8 @@ export default function PresentComponent() {
                 presentCard: presentsCard.Books,
                 text: [
                     "Сертифікат на 200 грн.",
-                    "Промокод на безкоштовну доставку",
+                    "Промокод на",
+                    "безкоштовну доставку",
                 ],
             },
         ],
@@ -108,7 +115,8 @@ export default function PresentComponent() {
             {
                 presentCard: presentsCard.Grusha,
                 text: [
-                    "5 упаковок кави 250 гр.",
+                    "Упаковка кави 250 гр.",
+                    "від магазину Груша UA",
                 ],
             },
             // {

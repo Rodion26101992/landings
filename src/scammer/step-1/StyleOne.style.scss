@@ -1,0 +1,49 @@
+@import "../../scss/mixins";
+
+.step_one_scammer {
+  display: flex;
+  color: white;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+
+  img {
+    width: 60%;
+    @media (max-width: 1600px) {
+      width: 50%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .wrapper_text {
+    width: 50%;
+    margin-right: 5%;
+    //@media (max-width: 1200px) {
+    //  width: 60%;
+    //}
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    h3 {
+      @include p-desktop;
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 48px;
+        line-height: 57px;
+      }
+    }
+
+    p {
+      @include p-scrammer;
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+@import "../../scss/mixins";
+
+.step_five_scammer {
+  display: flex;
+  color: white;
+  margin-top: 150px;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+  .wrapper_text {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    p {
+      @include p-scrammer;
+      margin: 0;
+      max-width: 40%;
+      @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 100%;
+      }
+    }
+
+    label {
+      @include label-scrammer;
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+    }
+  }
+
+}

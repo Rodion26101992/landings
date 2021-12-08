@@ -18,7 +18,6 @@ export default function NewBlackFriday() {
         function updateSpotLight(e) {
             const spotLight = document.querySelector("#spotLightNew");
             spotLight.style.background = `radial-gradient(circle  at ${e.pageX / window.innerWidth * 100}% ${e.pageY}px, ${spotLightSize})`;
-            // spotLight.style.backdropFilter = 'blur(0px)';
         }
     });
 
@@ -40,19 +39,10 @@ export default function NewBlackFriday() {
         !isLight ? elem.style.display = "none" : elem.style.display = "block";
         !isLight ? elemModal.style.display = "none" : elemModal.style.display = "block";
         handleLight(!isLight);
-
     }
-    const test= () =>{
-        debugger
-        console.log("this",this)
-        console.log("this",window)
-    }
-    console.log("thisGlobal",this)
 
     useEffect(() => {
         document.title = "Black Friday";
-
-        test();
     }, []);
     return <div>
         <div className="wrapperNewReactFlashlight">
@@ -65,7 +55,7 @@ export default function NewBlackFriday() {
             <MainPageComponent/>
             <SliderWrapperComponent/>
             <StepBoxComponent/>
-            {/*<PresentsComponent/>*/}
+            <PresentsComponent/>
         </div>
     </div>
 }

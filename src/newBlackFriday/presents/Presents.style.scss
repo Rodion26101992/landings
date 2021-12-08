@@ -1,34 +1,115 @@
 @import "../../scss/mixins";
 @import "../../scss/animations";
+@import "../../scss/layout";
 
-.black_friday_presents {
+.present_new_black_friday {
   text-align: center;
-  background: black;
   color: white;
   padding-bottom: 100px;
   @media (max-width: 1024px) {
     padding-bottom: 150px;
   }
 
-  .wrapper_title_box {
-    position: relative;
+  .wrapperLink {
+    @include flexCol;
+    margin: 150px 0 200px;
+
+    @media (max-width: 768px) {
+      margin: 150px 0 50px;
+
+    }
+
+    .boxLink {
+      position: relative;
+
+      #vector_link {
+        position: absolute;
+        right: -30%;
+        top: -50%;
+        z-index: 1;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      a {
+        margin: 0 0 100px;
+        position: relative;
+
+        button {
+          @include btnWhite;
+          background: #304FFE;
+          color: white;
+          box-shadow: 5px 20px 100px #304FFE;
+          @media (max-width: 1024px) {
+            font-size: 32px;
+            line-height: 36px;
+            padding: 30px 90px;
+          }
+          @media (max-width: 400px) {
+            font-size: 24px;
+            line-height: 28px;
+            padding: 20px 70px;
+          }
+        }
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      img {
+        height: 150px;
+      }
+    }
+    @media (max-width: 480px) {
+      img {
+        height: 100px;
+      }
+    }
+
   }
 
-  #arrowPresent {
+  .wrapper_new_title_box {
+    text-align: center;
+    position: relative;
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  #newArrowPresent {
     position: absolute;
     top: 40%;
-    right: 20%;
+    right: 15%;
+    @media (max-width: 768px) {
+      display: none
+    }
   }
+
+  #presentTitle {
+    width: 40%;
+    @media (max-width: 768px) {
+      display: none
+    }
+  }
+
+  #presentTitleMobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
+  }
+
 
   @import "../../scss/colors";
   @import "../../scss/mixins";
 
 
-  .wrapper_present {
+  .wrapper_new_present {
     @include p-present;
     @include flexCol;
-    padding: 0 20%;
-    @media (max-width: 1440px) {
+    padding: 0 15%;
+    @media (max-width: 1600px) {
       padding: 0 10%;
     }
     @media (max-width: 1200px) {
@@ -36,6 +117,7 @@
     }
     @media (max-width: 768px) {
       padding: 0;
+
     }
 
     .justify-start {
@@ -56,17 +138,61 @@
       justify-content: space-between;
       align-items: start;
       width: 100%;
+      margin-top: 50px;
       @media (max-width: 768px) {
+        margin-top: 0;
         flex-direction: column;
+        align-items: center
       }
 
       .present {
         @include flexCol;
-        align-items: start;
-        width: 470px;
+        //width: 470px;
         //width: 50%;
         @media (max-width: 768px) {
           width: max-content;
+        }
+        @media (max-width: 400px) {
+          width: 80%;
+        }
+
+        .box_img {
+          position: relative;
+
+          .basic_card {
+            z-index: 2;
+            margin: 30px;
+            @media (max-width: 1600px) {
+              width: 80%;
+              margin: 20px;
+            }
+            @media (max-width: 1024px) {
+              width: 70%;
+              margin: 20px;
+            }
+            @media (max-width: 768px) {
+              margin: 30px 0 20px;
+              width: 90%;
+            }
+          }
+
+          .vector {
+            position: absolute;
+            filter: blur(5px);
+            @media (max-width: 1600px) {
+              width: 20%;
+            }
+            @media (max-width: 1024px) {
+              width: 15%;
+            }
+            @media (max-width: 768px) {
+              width: 25%;
+            }
+            @media (max-width: 400px) {
+              width: 15%;
+            }
+
+          }
         }
 
         .test {
@@ -76,7 +202,7 @@
         }
 
         img {
-          //margin: 120px 0 40px;
+          //margin: 0 !important;
           @media (max-width: 768px) {
             width: 70%;
             margin: 50px 0 30px;
@@ -84,7 +210,35 @@
         }
 
         .textInfo {
-          width: max-content
+          text-align-last: center;
+          width: max-content;
+          @media (max-width: 1440px) {
+            p {
+              font-size: 22px;
+              line-height: 28px;
+            }
+          }
+          @media (max-width: 1024px) {
+            p {
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+          @media (max-width: 768px) {
+            text-align-last: start;
+            margin-left: 20px;
+            p {
+              font-size: 20px;
+              line-height: 27px;
+            }
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+
+          .color_blue {
+            color: $colorPri;
+          }
         }
       }
     }
