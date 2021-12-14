@@ -1,0 +1,15 @@
+.root_deliver_to_the_address {
+  background: #104eff;
+  padding: 210px;
+
+  @media (max-width: 1440px) {
+    padding: 150px;
+  }
+  @media (max-width: 1200px) {
+    padding: 80px;
+  }
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
+
+}

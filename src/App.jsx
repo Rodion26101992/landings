@@ -8,7 +8,6 @@ import {
     Route,
     Redirect,
 } from "react-router-dom";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.scss";
@@ -16,6 +15,7 @@ import MainHalloween from "./halloween2021";
 import MainBlackFriday from "./blackFriday";
 import NewBlackFriday from "./newBlackFriday";
 import Scammers from "./scammer";
+import DeliverToTheAddress from "./deliverToTheAddress";
 
 
 export default function App() {
@@ -34,8 +34,11 @@ export default function App() {
                     <Route path="/blackfriday">
                         <NewBlackFriday/>
                     </Route>
-                    <Route path="/scammers">
+                    <Route path="/fraud">
                         <Scammers/>
+                    </Route>
+                    <Route path="/deliver_to_the_address">
+                        <DeliverToTheAddress/>
                     </Route>
                     <Route path="*">
                         <NewBlackFriday/>
