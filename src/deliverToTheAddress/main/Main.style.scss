@@ -24,9 +24,54 @@
     //@media (max-width: 1200px) {
     //  width: 60%;
     //}
+
+    select {
+      border-radius: 32px;
+      padding: 36px 40px;
+      min-width: 500px;
+      position: relative;
+      display: inline-block;
+      @include label-champion-24;
+      color: #304FFE;
+      text-transform: none;
+      //background: transparent;
+      //background-image: url("data:image/svg+xml;utf8,<svg fill='#BCC7E7' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      //background-repeat: no-repeat;
+      //background-position-x: 90%;
+      //background-position-y: 50px;
+      //border: 1px solid #dfdfdf;
+      //margin-right: 2rem;
+      //padding-right: 2rem;
+    }
+
+    select:after {
+      //background: #ffa;
+      content: "▼";
+      color: black;
+      padding: 0 8px;
+      font-size: 50px;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      z-index: 10;
+      text-align: center;
+      width: 10%;
+      height: 100%;
+      pointer-events: none;
+      //box-sizing: border-box;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding-right: 25px;
+    }
+
     @media (max-width: 768px) {
       width: 100%;
     }
+
     h3 {
       @include p-desktop;
       @media (max-width: 768px) {
