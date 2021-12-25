@@ -1,0 +1,166 @@
+@import "../../scss/mixins";
+
+.step_one_new_year {
+  display: flex;
+  position: relative;
+  padding: 60px 180px 0 190px;
+  @media (max-width: 1024px) {
+    padding: 60px 90px 0 90px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 50px 0 0;
+  }
+  @media (max-width: 480px) {
+    padding: 60px 20px 0 0;
+  }
+
+  img {
+    position: absolute;
+  }
+
+  #boxGrey {
+    left: 0;
+    top: 0;
+    @media (max-width: 1440px) {
+      width: 15%;
+    }
+    @media (max-width: 768px) {
+      width: 10%;
+      left: 2%;
+      top: 5%;
+    }
+  }
+
+  #toy {
+    left: 50%;
+    top: 0;
+    @media (max-width: 1440px) {
+      width: 15%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #boxGreyRight {
+    right: 0;
+    top: 0;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+  }
+
+  #mobileBoxGrey {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 35%;
+      width: 15%;
+      right: 0;
+    }
+  }
+
+  #mobileBoxMain {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 40%;
+      width: 15%;
+      left: 10%;
+    }
+    @media (max-width: 400px) {
+      display: block;
+      position: absolute;
+      top: 40%;
+      width: 15%;
+      left: 0;
+    }
+  }
+
+  .wrapperText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 768px) {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 480px) {
+      width: 80%;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      @include h3-new-year;
+    }
+
+    p {
+      @include p-new-year;
+      background: #F27B50;
+      width: max-content;
+      padding: 5px 20px;
+    }
+
+    .wrapper_sub {
+      position: relative;
+
+      #boxCenter {
+        right: 10%;
+        bottom: -240%;
+        @media (max-width: 1600px) {
+          right: -10%;
+          bottom: -280%;
+        }
+        @media (max-width: 1440px) {
+          right: 10%;
+          bottom: -400%;
+
+        }
+        @media (max-width: 1024px) {
+          width: 50%;
+          right: -10%;
+          bottom: -400%;
+        }
+        @media (max-width: 768px) {
+          width: 35%;
+          right: -20%;
+          bottom: -200%;
+        }
+        @media (max-width: 768px) {
+          width: 35%;
+          right: -5%;
+          bottom: -200%;
+        }
+      }
+    }
+  }
+
+  .wrapperImg {
+    position: relative;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 400px) {
+      justify-content: flex-start;
+    }
+    img {
+      position: relative;
+      @media (max-width: 1600px) {
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        width: 75%;
+      }
+      @media (max-width: 400px) {
+        width: 90%;
+      }
+    }
+  }
+}

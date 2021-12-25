@@ -1,0 +1,87 @@
+@import "../../scss/mixins";
+@import "../../scss/layout";
+
+.step_two_deliver {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  p {
+    @include p-desktop;
+    text-transform: none;
+    @media (max-width: 768px) {
+      font-size: 50px;
+      line-height: 80px;
+    }
+  }
+
+  label {
+    @include label-champion-24;
+    line-height: 38px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: none;
+    }
+  }
+
+
+  .wrapper_more_deliver {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      margin-top: 80px;
+      width: 100%;
+    }
+
+    p {
+      color: white;
+    }
+
+    label {
+      font-weight: 400;
+    }
+
+    button {
+      @include label-champion-24;
+      max-width: 510px;
+      margin-top: 45px;
+      text-transform: none;
+      cursor: pointer;
+      background: #2CD5C4;
+      padding: 40px 30px;
+      border-radius: 95px;
+      @media (max-width: 768px) {
+        max-width: none;
+        padding: 20px 65px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      @media (max-width: 480px) {
+        padding: 12px 45px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .price_deliver {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    p {
+      color: #2CD5C4;
+    }
+
+  }
+
+}

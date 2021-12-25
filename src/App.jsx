@@ -16,6 +16,7 @@ import MainBlackFriday from "./blackFriday";
 import NewBlackFriday from "./newBlackFriday";
 import Scammers from "./scammer";
 import DeliverToTheAddress from "./deliverToTheAddress";
+import NewYear from "./new-year";
 
 
 export default function App() {
@@ -39,6 +40,9 @@ export default function App() {
                     </Route>
                     <Route path="/deliver_to_the_address">
                         <DeliverToTheAddress/>
+                    </Route>
+                    <Route path="/new_year">
+                        <NewYear/>
                     </Route>
                     <Route path="*">
                         <NewBlackFriday/>

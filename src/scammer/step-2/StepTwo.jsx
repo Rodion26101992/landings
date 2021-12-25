@@ -9,7 +9,7 @@ export default function StepTwo() {
         "Уважно перевіряйте сайт або мобільний додаток, на яких вводите пароль до особистого кабінету. Justin має єдиний офіційний сайт (https://justin.ua/) та мобільний додаток (IOS Android). Шахраї можуть їх підробляти та видавати за офіційні. Захищений сайт містить у рядку адреси https:// та значок «Замок». Перевірити сайт можна за допомогою спеціального сервісу кіберполіції або сервісу Асоціації ЕМА.",
     ];
     return <div className="step_two_scammer">
-        <img src={arrayImgs.Boy} alt="scammer"/>
+        <img id="boy" src={arrayImgs.Boy} alt="scammer"/>
         <div className="wrapper_text">
             <p>2 поради, як безпечно користуватися мобільним додатком та сайтом</p>
             <SliderScammerComponent arrayText={arrayText}/>

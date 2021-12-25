@@ -8,8 +8,10 @@
     padding-bottom: 50px;
   }
 
-  img {
-    width: 60%;
+  #scammer {
+    //width: 50%;
+    height: 60%;
+    width: 50%;
     @media (max-width: 1600px) {
       width: 50%;
     }
@@ -30,6 +32,7 @@
     h3 {
       @include p-desktop;
       @media (max-width: 768px) {
+        margin-top: 50px;
         width: 100%;
         font-size: 48px;
         line-height: 57px;

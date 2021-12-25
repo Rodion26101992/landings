@@ -18,6 +18,6 @@ export default function StepOne() {
             <p>6 правил для безпеки онлайн-покупок:</p>
             <SliderScammerComponent arrayText={arrayText}/>
         </div>
-        <img src={arrayImgs.Scammer} alt="scammer"/>
+        <img id="scammer" src={arrayImgs.Scammer} alt="scammer"/>
     </div>
 }

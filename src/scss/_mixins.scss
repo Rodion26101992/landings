@@ -117,3 +117,93 @@
   line-height: 45px;
   font-weight: 400;
 }
+
+
+@mixin h3-deliver {
+  font-size: 96px;
+  line-height: 115px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  }
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+
+@mixin h3-new-year {
+  font-size: 107px;
+  line-height: 123px;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  @media (max-width: 1600px) {
+    font-size: 64px;
+    line-height: 82px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 60px;
+    line-height: 69px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  @media (max-width: 480px) {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  @media (max-width: 320px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@mixin p-new-year {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+  @media (max-width: 1440px) {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  @media (max-width: 1440px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@mixin h3-number-new-year {
+  font-size: 200px;
+  line-height: 150px;
+  font-weight: 700;
+  margin: 0;
+  color: #F27B50;
+  @media (max-width: 1600px) {
+    font-size: 120px;
+    line-height: 82px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 72px;
+    line-height: 69px;
+  }
+  @media (max-width: 768px) {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}

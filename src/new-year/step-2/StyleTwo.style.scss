@@ -1,0 +1,152 @@
+@import "../../scss/mixins";
+
+.step_two_new_year {
+  display: flex;
+  position: relative;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  img {
+    position: absolute;
+  }
+
+  #boxLeft {
+    left: 0;
+    top: 0;
+    @media (max-width: 1440px) {
+      width: 7%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #boxBig {
+    right: 0;
+    top: -20%;
+    @media (max-width: 1440px) {
+      width: 20%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .wrapperText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 768px) {
+      margin-left: 15%;
+    }
+
+    h3 {
+      @include h3-new-year;
+    }
+
+    p {
+      @include p-new-year;
+      width: max-content;
+      padding: 5px 20px;
+      @media (max-width: 768px) {
+        padding: 0;
+      }
+    }
+
+    .wrapper_sub {
+      position: relative;
+    }
+  }
+
+  #mobileBoxMain {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      top: 5%;
+    }
+    @media (max-width: 400px) {
+      width: 10%;
+    }
+  }
+
+  #mobileChristmasToy {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      top: 25%;
+      right: 5%;
+    }
+    @media (max-width: 400px) {
+      width: 20%;
+    }
+  }
+
+  #mobileBoxTwoStep {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      top: 50%;
+      z-index: 1;
+    }
+    @media (max-width: 400px) {
+      width: 20%;
+    }
+  }
+
+  #boy {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #mobileBoy {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      width: 70%;
+    }
+  }
+
+  .wrapperImg {
+    @media (max-width: 1600px) {
+      width: 35%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      position: relative;
+      @media (max-width: 1600px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.wrapperImg {
+  position: relative;
+
+  @media (max-width: 400px) {
+    justify-content: flex-start;
+  }
+
+  img {
+    position: relative;
+    @media (max-width: 1600px) {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      width: 75%;
+    }
+    @media (max-width: 400px) {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,244 @@
+@import "../../scss/mixins";
+
+.step_three_new_year {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 300px;
+  @media (max-width: 1024px) {
+    padding-bottom: 200px;
+  }
+
+  #santaImg {
+    margin-left: 10%;
+    z-index: 1;
+    @media (max-width: 1440px) {
+      width: 25%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #mobileSantaImg {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      width: 25%;
+    }
+  }
+
+  #snowMan {
+    @media (max-width: 1440px) {
+      width: 25%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+      width: 25%;
+    }
+  }
+
+  #mobileSnowMan {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      width: 25%;
+    }
+  }
+
+  #green {
+    @media (max-width: 1440px) {
+      width: 25%;
+    }
+  }
+
+  #deer {
+    @media (max-width: 1440px) {
+      width: 25%;
+    }
+  }
+
+  #vector1 {
+    position: absolute;
+    bottom: -10%;
+    width: 45%;
+    @media (max-width: 1440px) {
+      width: 30%;
+    }
+  }
+
+  #vector2 {
+    position: absolute;
+    bottom: -25%;
+    right: 50%;
+    width: 8%;
+    @media (max-width: 1440px) {
+      bottom: -20%;
+      right: 55%;
+      width: 5%;
+    }
+  }
+
+  #vector3 {
+    position: absolute;
+    bottom: -20%;
+    right: 50%;
+    width: 30%;
+    @media (max-width: 1440px) {
+      width: 20%;
+    }
+  }
+
+  #backgroundImg {
+    //position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+  }
+
+  .boxInfo {
+    @include flexCol;
+    align-items: center;
+    margin-top: 100px;
+    @media (max-width: 768px) {
+      align-items: flex-start;
+
+    }
+
+    img {
+      position: relative;
+      width: 30%;
+    }
+
+    .wrapperItemRight, .wrapperItemLeft {
+      display: flex;
+
+      .boxStep {
+        @include flexCol;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 80%;
+        position: relative;
+        @media (max-width: 768px) {
+          width: 100%;
+
+        }
+      }
+
+      .alignItemsCenter {
+        align-items: center;
+        @media (max-width: 768px) {
+          //flex-direction: row-reverse;
+        }
+      }
+
+      .mr-b-50 {
+        margin-bottom: 50px;
+      }
+
+
+      h3 {
+        @include h3-number-new-year;
+        margin-right: 20px;
+      }
+
+      p {
+        @include p-new-year;
+      }
+    }
+
+    .wrapperItemLeft {
+      @media (max-width: 768px) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 50px 10% 0 10%;
+      }
+
+      img {
+        margin: 0 5%;
+      }
+    }
+
+    .wrapperItemRight {
+      justify-content: flex-end;
+      @media (max-width: 768px) {
+        justify-content: flex-start;
+        margin: 50px 10% 0 10%;
+      }
+
+      img {
+        margin-right: 10%;
+      }
+    }
+  }
+
+  .wrapperText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .boxTitle {
+      width: max-content;
+      background: #F27B50;
+      text-align: center;
+      padding: 0 40px;
+      @media (max-width: 768px) {
+        padding: 0 10px;
+      }
+      @media (max-width: 480px) {
+        text-align: start;
+      }
+    }
+
+    #boxLeftTwoStep {
+      left: 0;
+      top: 0;
+      @media (max-width: 1440px) {
+        width: 15%;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    #christmasToy {
+      right: 0;
+      top: 0;
+      @media (max-width: 1440px) {
+        width: 15%;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      @include h3-new-year;
+      @media (max-width: 768px) {
+      }
+    }
+
+    p {
+      @include p-new-year;
+      width: max-content;
+      padding: 5px 20px;
+    }
+
+    .wrapper_sub {
+      position: relative;
+    }
+  }
+
+  .wrapperImg {
+    img {
+      position: relative;
+    }
+  }
+}
