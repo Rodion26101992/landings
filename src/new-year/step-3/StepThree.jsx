@@ -5,7 +5,8 @@ import arrayImgs from "../../imgs/new-year";
 export default function StepThree() {
     return <div className="step_three_new_year">
         <div className="wrapperText">
-            <div className="boxTitle"><h3>П'ять кроків до </h3>
+            <div className="boxTitle">
+                <h3> ЧОТИРИ КРОКИ до </h3>
                 <h3> новорічного дива </h3>
             </div>
             <img id="boxLeftTwoStep" src={arrayImgs.BoxLeftTwoStep} alt="boxLeftTwoStep"/>
@@ -40,10 +41,10 @@ export default function StepThree() {
             </div>
             <div className="wrapperItemLeft">
                 <div className="boxStep alignItemsCenter">
-                    <img  src={arrayImgs.Santa} alt="santa" id="santaImg"/>
+                    <img src={arrayImgs.Santa} alt="santa" id="santaImg"/>
                     <h3 className="mr-b-50">4</h3>
-                    <p>Стань сантою для найрідніших — відправ подарунок з чарівного відділення до будь-якого іншого
-                        безкоштовно та анонімно.</p>
+                    <p>Стань Сантою для найрідніших — відправ подарунок з чарівного відділення до будь-якого іншого
+                        безкоштовно.</p>
                     <img src={arrayImgs.Santa} alt="santa" id="mobileSantaImg"/>
 
                 </div>

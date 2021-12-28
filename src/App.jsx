@@ -41,7 +41,7 @@ export default function App() {
                     <Route path="/deliver_to_the_address">
                         <DeliverToTheAddress/>
                     </Route>
-                    <Route path="/new_year">
+                    <Route path="/newyear">
                         <NewYear/>
                     </Route>
                     <Route path="*">
