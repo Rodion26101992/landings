@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./index.scss";
 import StepOne from "./step-1/StepOne";
 import StepTwo from "./step-2/StepTwo";
@@ -8,6 +8,9 @@ import StepFive from "./step-5/StepFive";
 
 
 export default function Scammers() {
+    useEffect(() => {
+        document.title = "Безпека";
+    }, []);
     return <div className="root_scammer">
         <StepOne/>
         <StepTwo/>

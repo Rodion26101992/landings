@@ -10,8 +10,12 @@
 
   img {
     width: 60%;
-    @media (max-width: 1600px) {
+    @media (max-width: 1280px) {
       width: 50%;
+    }
+    @media (max-width: 1024px) {
+      width: 50%;
+      height: 50%;
     }
     @media (max-width: 768px) {
       width: 100%;
@@ -40,8 +44,14 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+      @media (max-width: 1280px) {
+        min-width: 350px;
+      }
       @media (max-width: 768px) {
         min-width: 100%;
+      }
+      @media (max-width: 320px) {
+        padding: 30px 20px 30px 10px;
       }
 
     }
@@ -59,8 +69,24 @@
       margin-top: 100px;
       width: max-content;
       @media (max-width: 768px) {
-        width: 100%
+        width: 100%;
+        margin-top: 50px;
       }
+
+      select {
+        display: inline-block;
+        max-height: 100px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      option {
+        @media (max-width: 480px) {
+          font-size: 20px;
+        }
+      }
+
       &:before {
         content: "▼";
         padding: 0 8px;
@@ -84,12 +110,13 @@
       width: 100%;
     }
 
+
     h3 {
       @include h3-deliver;
       @media (max-width: 768px) {
         width: 100%;
-        font-size: 48px;
-        line-height: 57px;
+        font-size: 42px;
+        line-height: 55px;
       }
     }
 

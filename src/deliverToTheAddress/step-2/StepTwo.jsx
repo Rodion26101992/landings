@@ -1,7 +1,7 @@
 import React from "react";
 import "./StepTwo.style.scss";
 
-export default function StepTwoDeliver() {
+export default function StepTwoDeliver({setForbidden, isForbidden}) {
 
     return <div className="step_two_deliver">
         <div className="wrapper_more_deliver">
@@ -16,9 +16,10 @@ export default function StepTwoDeliver() {
                 7. Тимчасове посвідчення, що підтверджує особу громадянина України.<br/>
                 8. Паспорт іноземного громадянина, у якому відомості про особу вказані кирилицею та/або латиницею.
             </label>
-            <button>
+            {!isForbidden && <button onClick={setForbidden}>
                 Заборонені до перевезення посилки
             </button>
+            }
         </div>
         <div className="price_deliver">
             <div>

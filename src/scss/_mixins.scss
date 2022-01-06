@@ -126,7 +126,12 @@
   margin: 0;
   text-transform: uppercase;
   @media (max-width: 1440px) {
-    font-size: 48px;
+    font-size: 72px;
+    line-height: 90px;
+  }
+  @media (max-width: 1280px) {
+    font-size: 62px;
+    line-height: 74px;
   }
   @media (max-width: 768px) {
     font-size: 24px;
@@ -174,10 +179,6 @@
     font-size: 32px;
     line-height: 35px;
   }
-  @media (max-width: 1440px) {
-    font-size: 26px;
-  }
-
   @media (max-width: 768px) {
     font-size: 28px;
     line-height: 28px;
