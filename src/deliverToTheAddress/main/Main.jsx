@@ -2,13 +2,14 @@ import React, {useState, useEffect} from "react";
 import "./Main.style.scss";
 import arrayImgs from "../../imgs/deliver/index";
 import axios from "axios";
+import {useRouteMatch} from "react-router-dom";
 
 export default function MainDeliver() {
     const [citySelect, setCitySelect] = useState("");
     const [citiesSelectList, setCitiesSelectList] = useState([]);
 
     useEffect(() => {
-        axios.get('https://preprod.justin.ua/json/cities')
+        axios.get(`${window.location.origin}/json/cities?targeted_delivery=1`)
             .then(function ({data}) {
                 return setCitiesSelectList(data);
             })
@@ -16,7 +17,6 @@ export default function MainDeliver() {
                 console.log(error);
             });
     }, []);
-
     return <div className="wrapper_main_deliver">
         <div className="main_deliver">
             <div className="wrapper_text">
