@@ -38,7 +38,7 @@ export default function App() {
                     <Route path="/fraud">
                         <Scammers/>
                     </Route>
-                    <Route path="/deliver_to_the_address">
+                    <Route path="/adresna-dostavka">
                         <DeliverToTheAddress/>
                     </Route>
                     <Route path="/newyear">

@@ -1,5 +1,6 @@
 @import "../../scss/mixins";
 @import "../../scss/layout";
+@import "../../scss/colors";
 
 .step_three_deliver {
   display: flex;
@@ -9,7 +10,7 @@
 
   button {
     @include label-champion-24;
-    max-width: 510px;
+    max-width: 100%;
     margin-top: 45px;
     text-transform: none;
     cursor: pointer;
@@ -18,15 +19,26 @@
     color: white;
     padding: 35px 75px;
     border-radius: 32px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       max-width: none;
-      padding: 20px 65px;
+      padding: 20px 30px;
       font-size: 24px;
       line-height: 28px;
     }
-    @media (max-width: 480px) {
-      padding: 12px 45px;
+    @media (max-width: 768px) {
+      max-width: none;
+      padding: 20px 65px;
       font-size: 18px;
+      line-height: 28px;
+    }
+    @media (max-width: 480px) {
+      padding: 12px 20px;
+      font-size: 12px;
+      line-height: 22px;
+    }
+    @media (max-width: 400px) {
+      padding: 8px 10px;
+      font-size: 8px;
       line-height: 22px;
     }
   }
@@ -48,6 +60,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
+
+    #calculate {
+      background: white;
+      color: $colorPri;
+      margin-left: 30px
+    }
   }
 
 
