@@ -17,6 +17,7 @@ export default function MainDeliver() {
                 console.log(error);
             });
     }, []);
+
     return <div className="wrapper_main_deliver">
         <div className="main_deliver">
             <div className="wrapper_text">

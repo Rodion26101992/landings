@@ -8,6 +8,14 @@
   text-align: center;
 
 
+  .wrapper_image {
+    img {
+      width: 100%;
+      align-items: center;
+      height: auto;
+    }
+  }
+
   button {
     @include label-champion-24;
     max-width: 100%;
