@@ -50,17 +50,11 @@ export default function StepThreeDeliver() {
     // }
 
     return <div className="step_three_deliver">
-        <h3>Наша базова цінова пропозиція щодо відправлень в межах України між фізичними
-            особами</h3>
+        <h3>Наші тарифи:</h3>
         <div className="wrapper_image">
             <img src={arrayImgs.Table} alt="table"/>
         </div>
         <div className="wrapper_button">
-            <a href="https://justin.ua/" target="_blank">
-                <button>
-                    Додаткова інформація
-                </button>
-            </a>
             <a href="https://justin.ua/calculate" target="_blank">
                 <button id="calculate">
                     Розрахувати вартість доставки

@@ -54,7 +54,7 @@
   h3 {
     @include h3-deliver;
     color: white;
-    margin: 250px 0 75px;
+    margin: 100px 0 50px;
     @media (max-width: 768px) {
       margin: 50px 0 40px;
       width: 100%;

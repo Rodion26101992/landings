@@ -1,43 +1,33 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./Main.style.scss";
 import arrayImgs from "../../imgs/deliver/index";
-import axios from "axios";
-import {useRouteMatch} from "react-router-dom";
 
 export default function MainDeliver() {
-    const [citySelect, setCitySelect] = useState("");
-    const [citiesSelectList, setCitiesSelectList] = useState([]);
 
-    useEffect(() => {
-        axios.get(`${window.location.origin}/json/cities?targeted_delivery=1`)
-            .then(function ({data}) {
-                return setCitiesSelectList(data);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }, []);
+    const getSend = (sendImg, text) => {
+        return <div className="box_send">
+            <img src={sendImg}/>
+            <label>{text}</label>
+        </div>
+    };
 
-    return <div className="wrapper_main_deliver">
-        <div className="main_deliver">
-            <div className="wrapper_text">
-                <h3>Доставляємо за адресою в таких містах</h3>
-                <div className="select_wrapper">
-                    <select defaultValue={citySelect} name="citySelect" onClick={e => setCitySelect(e.target.value)}>
-                        {/*<optgroup label="">*/}
-                        <option value="" disabled>Оберіть ваше місто</option>
-                        {citiesSelectList.map((item, index) => {
-                            return <option value={item.title_ua} key={item.title_ua + index}>{item.title_ua}</option>
-                        })}
-                        {/*</optgroup>*/}
-                    </select>
+    return <>
+        <div className="wrapper_main_deliver">
+            <div className="main_deliver">
+                <div className="wrapper_text">
+                    <h3>Доставляємо за адресою в таких містах</h3>
+                </div>
+                <img src={arrayImgs.Car} alt="car"/>
+            </div>
+            <div className="wrapper_map"><img src={arrayImgs.Map} alt="map"/></div>
+            <div className="box_title">
+                <p> Адресну доставку можна замовити: </p>
+                <div className="wrapper_send">
+                    {getSend(arrayImgs.Home, "при оформленні посилки у відділенні;")}
+                    {getSend(arrayImgs.Phone, "при створенні посилки в мобільному додатку чи особистому кабінеті на justin.ua;")}
+                    {getSend(arrayImgs.Kitchen, "при оформленні замовлення в інтернет-магазині (API).")}
                 </div>
             </div>
-            <img src={arrayImgs.Car} alt="car"/>
         </div>
-        <div className="box_title">
-            <p> Як замовити адресну доставку? </p>
-            <label>Наразі адресну доставку можна замовити тільки під час оформлення посилки у відділенні.</label>
-        </div>
-    </div>
+    </>
 }

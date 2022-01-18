@@ -9,6 +9,11 @@ import Medicinal from "./medicinal.png";
 import Money from "./money.png";
 import Product from "./product.png";
 import Temperature from "./temperature.png";
+import Home from "./home.png";
+import Kitchen from "./kitchen.png";
+import Map from "./map.png";
+import Message from "./message.png";
+import Phone from "./phone.png";
 
 export default {
     Car,
@@ -21,5 +26,10 @@ export default {
     Medicinal,
     Money,
     Product,
-    Temperature
+    Temperature,
+    Home,
+    Kitchen,
+    Map,
+    Message,
+    Phone,
 }

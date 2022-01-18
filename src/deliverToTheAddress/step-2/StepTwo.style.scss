@@ -4,9 +4,10 @@
 .step_two_deliver {
   display: flex;
   justify-content: space-between;
-  margin-top: 75px;
+  margin-top: 90px;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
+    margin-top: 50px;
   }
 
   p {
@@ -40,10 +41,12 @@
 
     p {
       color: white;
+      margin-bottom: 20px;
     }
 
     label {
       font-weight: 400;
+      text-transform: inherit;
     }
 
     button {
@@ -78,8 +81,21 @@
       width: 100%;
     }
 
+    label {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: inherit;
+      @media (max-width: 768px) {
+        margin: 30px 0;
+      }
+    }
+
     p {
       color: #2CD5C4;
+      margin-bottom: 30px;
+      @media (max-width: 768px) {
+        margin: 30px 0;
+      }
     }
 
   }

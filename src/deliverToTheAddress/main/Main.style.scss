@@ -1,12 +1,29 @@
 @import "../../scss/mixins";
 
 .wrapper_main_deliver {
+  @include flexCol;
+
+  .wrapper_map {
+    @include flexCol;
+    margin-top: 50px;
+    width: 80%;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+
+    }
+  }
+
+
   .main_deliver {
     display: flex;
     color: white;
     @media (max-width: 768px) {
       flex-direction: column-reverse;
-      padding-bottom: 50px;
     }
 
     img {
@@ -133,11 +150,14 @@
     @include flexCol;
     border: 3px dashed white;
     border-width: 5px;
+    width: 80%;
     border-radius: 40px;
     padding: 30px 75px;
     margin-top: 100px;
     @media (max-width: 768px) {
       margin: 20px 0;
+      padding: 30px 20px;
+      width: 90%;
     }
     @media (max-width: 480px) {
       padding: 25px 20px;
@@ -146,12 +166,42 @@
 
     p {
       @include p-main-deliver;
+      margin-bottom: 40px;
     }
 
     label {
       @include label-main-deliver;
       @media (max-width: 768px) {
         margin-top: 20px;
+      }
+    }
+
+    .wrapper_send {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      .box_send {
+        display: flex;
+        align-items: center;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        @media (max-width: 480px) {
+          flex-direction: column;
+        }
+        label {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        img {
+          height: max-content;
+          margin-right: 3%;
+        }
       }
     }
   }
